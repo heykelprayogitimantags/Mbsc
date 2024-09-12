@@ -8,5 +8,5 @@ FROM
   tb_reservasi_hotel r 
   JOIN tb_kamar AS k ON r.kamar_id = k.kamar_id 
   JOIN tb_pelanggan AS p ON r.pelanggan_id = p.pelanggan_id 
-WHERE 
+WHERE    
   k.jenis_kamar = 'suite';
